@@ -7,18 +7,18 @@
     <title>Document</title>
     <script>
         function starten(){ 
-            var som1 = optellen(5,7);
-            var som2 = optellen(9,4);
-            console.log("som1: "+som1);
-            console.log("som2: "+som2);
+            document.getElementById("knop").onclick = tweede;
         }
-        function optellen(getal1, getal2){
-            console.log(getal1 + " optellen bij "+getal2);
-            return getal1 + getal2;
+        function eerste(){
+            console.log("de eerste");
+        }
+        function tweede(){
+            console.log("de tweede");
         }
     </script>
 </head>
 <body>
     <input type=button onclick=starten() value=beginnen id=iets>
+    <input type=button onclick=eerste() id=knop value="veranderen">
 </body>
 </html>

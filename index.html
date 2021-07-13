@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function doeAlert(){
-            var hetelem = document.getElementById("invoerveld");
-            if(  hetelem.value == "hallo"   ){
-                alert("Welkom");
+        function starten(){
+            var lijstje = [3,4,15,34,88];
+           // lijstje[1] = document.getElementById("iets");
+          //  console.log(lijstje[3]);
+            console.log(lijstje);
+
+            for(var x = 0; x<lijstje.length ; x++){
+                if(lijstje[x] % 2 == 0   ){
+                    console.log("dit is een even getal"+ lijstje[x]);
+                }
             }
-            if(  hetelem.value == "doei"   ){
-                alert("Tot de volgende keer");
-            }
+
+
         }
     </script>
 </head>
 <body>
-    Miniopdracht 1
-    <br>
-    <p>
-        <input id="invoerveld" >
-        <input type="button" value="groetjes" onclick="doeAlert()">
-    </p>
-
-
+    <input type=button onclick=starten() value=beginnen id=iets>
 </body>
 </html>

@@ -7,18 +7,16 @@
     <title>Document</title>
     <script>
         function starten(){ 
-            document.getElementById("knop").onclick = tweede;
+           var x = Math.floor(Math.random()*100);
+           console.log(">>>>>>>"+x);
+           var lijst =["maandag","dinsdag","woensdag","donderdag","vrijdag"];
+           var getal = Math.floor(Math.random()*lijst.length);
+           console.log(lijst[getal]);
         }
-        function eerste(){
-            console.log("de eerste");
-        }
-        function tweede(){
-            console.log("de tweede");
-        }
+
     </script>
 </head>
 <body>
     <input type=button onclick=starten() value=beginnen id=iets>
-    <input type=button onclick=eerste() id=knop value="veranderen">
 </body>
 </html>

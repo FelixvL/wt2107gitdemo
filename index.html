@@ -5,15 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function doeAlert(){
+            var hetelem = document.getElementById("invoerveld");
+            if(  hetelem.value == "hallo"   ){
+                alert("Welkom");
+            }
+            if(  hetelem.value == "doei"   ){
+                alert("Tot de volgende keer");
+            }
+        }
+    </script>
 </head>
 <body>
-    <div>start</div>
-    // nog meer extra
-    // ff snel
-    extra anders
-    -- git  - lokaal snapshot commits
-    -- github - weer iets anders
-     hier extra anders
-    // terminal  -  cmd   -  bash   - shell  - 
+    Miniopdracht 1
+    <br>
+    <p>
+        <input id="invoerveld" >
+        <input type="button" value="groetjes" onclick="doeAlert()">
+    </p>
+
+
 </body>
 </html>

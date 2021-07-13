@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function starten(){
-            var lijstje = [3,4,15,34,88];
-           // lijstje[1] = document.getElementById("iets");
-          //  console.log(lijstje[3]);
-            console.log(lijstje);
-
-            for(var x = 0; x<lijstje.length ; x++){
-                if(lijstje[x] % 2 == 0   ){
-                    console.log("dit is een even getal"+ lijstje[x]);
-                }
-            }
-
-
+        function starten(){ 
+            var som1 = optellen(5,7);
+            var som2 = optellen(9,4);
+            console.log("som1: "+som1);
+            console.log("som2: "+som2);
+        }
+        function optellen(getal1, getal2){
+            console.log(getal1 + " optellen bij "+getal2);
+            return getal1 + getal2;
         }
     </script>
 </head>
